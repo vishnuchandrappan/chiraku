@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Patrick+Hand|Unica+One&display=swap');
+
+body {
+    background: #19191B;
+    font-family: 'Covered By Your Grace', cursive;
+    height: 100%;
+    margin: 0;
+}
+
+#text-area{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 74px;
+    letter-spacing: 10px;
+}
+
+.container {
+    display: block;
+    transform: translateY(700px);
+}
+
+#countdown {
+    margin: 0 auto;
+}
+
+#clock span {
+    float: left;
+    text-align: center;
+    font-size: 84px;
+    margin: 0 2.5%;
+    color: #fff;
+    padding: 20px;
+    width: 20%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 1px 1px 50px 8px rgba(0, 0, 0, 0.53);
+    box-shadow: 1px 1px 50px 8px rgba(0, 0, 0, 0.53);
+}
+
+#clock span:nth-child(1) {
+    /* background: #a34e50; */
+    /* border: solid 5px #a34e50; */
+}
+
+#clock span:nth-child(2) {
+    /* background: #daba55; */
+    /* border: solid 5px #daba55; */
+}
+
+#clock span:nth-child(3) {
+    /* background: #bada55; */
+    /* border: solid 5px #bada55; */
+}
+
+#clock span:nth-child(4) {
+    /* background: #349e63; */
+    /* border: solid 5px #349e63; */
+}
+
+#clock:after {
+    content: "";
+    display: block;
+    /* clear: both; */
+}
+
+#units span {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'Covered By Your Grace', cursive;
+    margin-top: 30px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.7);
+}
+
+span.turn {
+    -webkit-animation: turn 0.7s ease forwards;
+    animation: turn 0.7s ease forwards;
+}
+
+@-webkit-keyframes turn {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes turn {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
